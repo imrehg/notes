@@ -3,10 +3,104 @@ Wiki-Format: zim 0.4
 Creation-Date: 2010-02-22T18:12:03.229808
 
 ====== MOT ======
-Created Monday 22 February 2010
+Modified:
+Monday 22/02/2010 19:02
 
- * Reorganize MOT beams
- * Relocate 
- * x2 single pass AOM
+[ ] Reorganize MOT beams
+[ ] Relocate Repumper laser
+[ ] x2 single pass AOM
+[ ] Reroute master locking system
+[ ] Optical detection system 
+[ ] Labeling of power supply
+[ ] Fan extension cord
 
-== Reorganize MOT beams ==
+=== Reorganize MOT beams ===
+
+From the current "+" arrangement of the beams we have to move to the
+more convenient "x" arrangement. This can be done only when I know
+that the MOT is working well, since I have to check the alignment of
+the beams.
+
+The "x" arrangement will allow more space for the detection system,
+and would leave two sides of the system open for the experimental beams.
+
+The disadvantage is the larger scattering pattern on the glass cell
+side, which has to be taken into account. If **w** is the beam radius
+and **d** is the cell radius on the short end, then **w 2^(1/2) < d**.
+
+=== Relocate Repumper laser ===
+
+The idea to relocate the repumper laser to join the slave laser comes
+from the current difficulties with the optical feedback due to the
+FC/PC ended fibre. The advantages, though are multifold:
+
+* Could overlap with the master laser before injecting into a fibre,
+thus allowing for simpler alingment at the trap.
+* The overlap can happen before an AOM, thus shifting the repumper
+frequency to a suitable one.
+* Optical feedback can be reduced with the AOM (hopefully).
+* Switching is possible.
+
+**Now thinking about it**, since we have 2 AOMs, only the aligment
+is the serious advantage, everything else can be done with 2 
+separate AOM configurations , using the same frequency 
+source. (x2 double pass, or x1 single-pass (repumper) + x1 double-pass 
+(master))
+
+=== x2 single pass AOM ===
+
+Overlaping of the master and the repumper beam can happen between the 
+two AOMs on a PBS cube. 
+
+* D_slave_aom = 75.8 MHz ( = frequency diff between F=3->2x3 and F=3->3 
+transitions).
+* 2 * D_slave_aom + 2 * Gamma = 161.6 MHz = D_master_aom
+
+The driver would be the same for both, using a power splitter 
+(MiniCircuit) and two +10dB amplifiers. I already have the amplifiers, 
+the new one would be switched out from the master system EOM amplifier, 
+which is replaced by an unused "home-made-box" version.
+
+=== Reroute master locking system ===
+
+If we go with two double-pass system, it is not necessarry.
+
+Otherwise, if we use the x2 single-pass AOM:
+
+* Using +1 order of AOM instead of -1 for the locking beam, to have the 
+right frequency shift for the repumper.
+
+Could also consider using -1 order for the injection beam instead of the 
+0 order, to be able to reduce power and thus optical feedback from the 
+master. Would need an additional L/2 plate for the master locking 
+system to have the same power for different AOM drive power.
+
+=== Optical detection system ===
+
+Design and order parts. Ideas:
+
+* Dichroic mirror to separate IR and VIS (7P1/2 ~ 454 nm) light. **Casix**
+* Two PD, preferably x1 Si (IR), x1 GaP (VIS)
+
+
+Professor's idea:
+
+* PMT system for high sensitivity
+* IMHO lacks diagnostics, slower, more space needed, scattered 
+light sensitivity
+
+=== Labeling of power supply ===
+
+The switches sould be labelled according to connections, to document 
+conenctions and avoid mistakes.
+
+* x2 slave AOM amp
+* x1 master EOM amp
+
+=== Fan extension cord ===
+
+There are a number of fans used to cool my amplifiers (right now 4). 
+They should be plugged into an "unpriviliged" socket, not to the  
+regulated/laser/UPS ones. Also, a cord would allow quick and 1-step 
+swithcing, for power saving, safety reasons. There might be other 
+non-critical equipment added: CCD camera?

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Bloch Equation Simulations ======
+Modified:
+Monday 22/02/2010 19:06
+
+[ ] CW 4-level system
+[ ] CW system with hyperfine levels
+	[ ] Saturations spectroscopy
+[ ] 3-level mode locked
+[ ] hyperfine levels mode locked
+[ ] CW two-photon transition full system
+[ ] Mode-locked two-photon transition full system
+

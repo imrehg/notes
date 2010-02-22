@@ -3,5 +3,11 @@ Wiki-Format: zim 0.4
 Creation-Date: 2010-02-22T18:11:44.520044
 
 ====== ToDo ======
-Created Monday 22 February 2010
+Modified:
+Monday 22/02/2010 19:10
+
+There are a lot of things to do in the lab, the sup-pages are the 
+checklists and the explanations of what needs to be done IMHO. Of course 
+it will never end, but hopefully there will be more and more finished 
+items the list later...
 
