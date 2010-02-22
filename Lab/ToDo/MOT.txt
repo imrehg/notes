@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2010-02-22T18:12:03.229808
+
+====== MOT ======
+Created Monday 22 February 2010
+
+ * Reorganize MOT beams
+ * Relocate 
+ * x2 single pass AOM
+
+== Reorganize MOT beams ==
