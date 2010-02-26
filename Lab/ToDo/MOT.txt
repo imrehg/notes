@@ -1,18 +1,22 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2010-02-22T18:12:03.229808
+Modification-Date: Fri, 26 Feb 2010 12:23:02 +0800
 
 ====== MOT ======
 Modified:
 Monday 22/02/2010 19:02
+Friday 26/02/2010 12:22
 
 [ ] Reorganize MOT beams
-[ ] Relocate Repumper laser
+	[ ] Use larger beam spot size
+	[ ] Geometric alignment of beams
+[x] Relocate Repumper laser
 [ ] x2 single pass AOM
-[ ] Reroute master locking system
+[x] Reroute master locking system
 [ ] Optical detection system 
-[ ] Labeling of power supply
-[ ] Fan extension cord
+[*] Labeling of power supply
+[*] Fan extension cord
 
 === Reorganize MOT beams ===
 
@@ -27,6 +31,18 @@ and would leave two sides of the system open for the experimental beams.
 The disadvantage is the larger scattering pattern on the glass cell
 side, which has to be taken into account. If **w** is the beam radius
 and **d** is the cell radius on the short end, then **w 2^(1/2) < d**.
+
+== Use larger beam spot size ==
+
+Larger beam spot size woulf enable us to have larger MOT. According to the papers, the MOT size scales  better with the beam size than with the beam intensity, and almost always advantageous to create large beams. Also, beam alignment is much less painful and more robust with a larger beam.
+
+Our current contraint is to do with the l/2 and l/4 plates. They are 1/2" optics thus doesn't allow much larger than the current x4 magnification (200mm & -50mm lens pair). The current spot size is on the order of w = 3.5mm.
+
+To be able to do this, we need lenses with longer focal length (have a 250mm and a 300mm lens, that should be good enough). Additionally, we need different mounts for the 1" optics. This still has to be manufactured. The waveplates then can be aligned with the help of a PBS cube, and made ready to use.
+
+== Geometric alignment of beams ==
+
+The 6 trapping beams have to be quite well aligned to be able to observe the MOT, especially because of the relative small size of the beams. This, however, is difficult because the geometrical arrangement does not lend itself to easy positioning of the beams. The magnetic coil holders have machining imperfections that break symmetry (e.g. the hole in the middle is not cental with respect to the frame, since one side of the frame is longer). When going perpendicular to the glass walls ("+" beams), the arrangement is much simpler. The "x" configuration seems to have to rely on lot of trial-and-error, which is time consuming and error-prone. Especially difficult when there's no visible fluorescence to guide us. Maybe it's better to get some fluorescence first and then try to arrange things again? A possible disadvantage is the need to wait for pumping out afterwards, which can take days...
 
 === Relocate Repumper laser ===
 
@@ -97,6 +113,8 @@ conenctions and avoid mistakes.
 * x2 slave AOM amp
 * x1 master EOM amp
 
+**Update:** Done.
+
 === Fan extension cord ===
 
 There are a number of fans used to cool my amplifiers (right now 4). 
@@ -104,3 +122,5 @@ They should be plugged into an "unpriviliged" socket, not to the
 regulated/laser/UPS ones. Also, a cord would allow quick and 1-step 
 swithcing, for power saving, safety reasons. There might be other 
 non-critical equipment added: CCD camera?
+
+**Update:** Done, all amplifier fans are on a same cord connecting to the external power network.
